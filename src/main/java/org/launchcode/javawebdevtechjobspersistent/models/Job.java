@@ -1,9 +1,10 @@
 package org.launchcode.javawebdevtechjobspersistent.models;
 
+
 import javax.persistence.*;
 
 @Entity
-public class Job{
+public class Job extends AbstractEntity{
 
     @Id
     @GeneratedValue
@@ -17,6 +18,7 @@ public class Job{
     public Job() {
     }
 
+    //TODO: is name ever identified?
     public Job(String anEmployer, String someSkills) {
         super();
         this.employer = anEmployer;
